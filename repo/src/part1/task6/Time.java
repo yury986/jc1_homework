@@ -17,7 +17,7 @@ public class Time {
         day = d % 7;
         w = (d - day) /7;
         week = w % 7;
-        System.out.println(week + "недели" + " " + day  + "суток" + " " + hour + "часов" + " " + min + "минут" + " " + sec + "секунд");
+        System.out.println (week + "недели" + " " + day  + "суток" + " " + hour + "часов" + " " + min + "минут" + " " + sec + "секунд");
 
 
     }
