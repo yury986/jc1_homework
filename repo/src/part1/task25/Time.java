@@ -18,26 +18,32 @@ public class Time {
         this.hou = hou;
     }
 
-    public Time( int sec1) {
-        this.sec1 = sec1;
+    public Time( int sec2) {
+        this.sec2 = sec2;
 
     }
 
     public int getallSec() {
-        int sec2 = this.hou * 3600 + this.min * 60 + this.sec;
-        return sec2;
-    }
-
-    public int getSec() {
+        int sec1 = this.hou * 3600 + this.min * 60 + this.sec;
         return sec1;
     }
 
+    public int getSec() {
+        return sec2;
+    }
 
-    public int compareTo() {
-        Integer obj1 = new Integer(sec2);
-        Integer obj2 = new Integer(sec1);
+
+    public  void compareTo() {
+        Integer obj1 = new Integer(sec1);
+        Integer obj2 = new Integer(sec2);
         int res = (obj2.compareTo(obj1));
-        return (res);
+        if (res > 0){
+            System.out.println("obj1 is larger then obj2");
+        }else if (res < 0) {
+            System.out.println("obj2 is larger then obj1");
+        }else{
+            System.out.println("obj1 & obj2 are equal");
+        }
 
         }
    }
