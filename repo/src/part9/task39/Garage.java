@@ -2,9 +2,9 @@ package part9.task39;
 
 class Garage <T extends Motorcycle,X extends Car> {
 
-    private T[] motorcycle;
+    private T [] motorcycle;
 
-    private X[] car;
+    private X [] car;
 
 
     public void setMotorcycle (T[] motorcycle) {

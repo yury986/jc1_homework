@@ -24,6 +24,6 @@ public class Main {
         garageCar.printCar();
 
 
-        }
     }
+}
 
