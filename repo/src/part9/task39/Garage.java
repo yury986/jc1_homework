@@ -18,7 +18,7 @@ class Garage <T extends Motorcycle,X extends Car> {
     public void printMoto() {
 
         for (T motorcycles : motorcycle) {
-            System.out.println(motorcycles.getName());
+            System.out.println("Motorcycle" + " " +motorcycles.getName());
 
         }
 
@@ -27,7 +27,7 @@ class Garage <T extends Motorcycle,X extends Car> {
     public void  printCar() {
 
         for (X cars : car) {
-            System.out.println(cars.getName());
+            System.out.println("Car" + " " + cars.getName());
 
         }
     }
