@@ -6,7 +6,7 @@ public class Task16 {
         boolean b = true;
         for (int P = 50; P <= 70; P++) {
             for (int i = 2; i < P; i++) {
-                if (P % i == 0) {
+                if  (P % i == 0) {
                     b = false;
                     break;
                 }
