@@ -4,11 +4,9 @@ public class Time {
 
     public static int sec2;
 
-    public static int sec1;
+    public   int sec;
 
-    public  int sec;
-
-    public  int min;
+    public   int min;
 
     public int hou;
 
@@ -23,25 +21,22 @@ public class Time {
 
     }
 
-    public int getallSec() {
+    public  int getallSec() {
         int sec1 = this.hou * 3600 + this.min * 60 + this.sec;
         return sec1;
     }
 
     public int getSec() {
-        return sec2;
-    }
+    return sec2;
+   }
 
 
-    public  void compareTo() {
-        Integer obj1 = new Integer(sec1);
-        Integer obj2 = new Integer(sec2);
-        int res = (obj2.compareTo(obj1));
-        if (res > 0){
+    public void compare(Time o) {
+        if (getallSec() > o.getSec()){
             System.out.println("obj1 is larger then obj2");
-        }else if (res < 0) {
+        }else if (getallSec() > o.getSec()) {
             System.out.println("obj2 is larger then obj1");
-        }else{
+        }else if (getallSec() == o.getSec()){
             System.out.println("obj1 & obj2 are equal");
         }
 

@@ -4,12 +4,11 @@ public class Main {
     public static void main(String[] args) {
 
         Time obj1 = new Time(23,77,50);
-        Time obj2 = new Time(165896);
+        Time obj2 = new Time(183643);
 
-
-        System.out.println(obj1.getallSec());
+       System.out.println(obj1.getallSec());
         System.out.println(obj2.getSec());
-        obj1.compareTo();
+        obj1.compare(obj2);
     }
 }
 
