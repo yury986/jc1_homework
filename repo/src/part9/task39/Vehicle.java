@@ -1,7 +1,5 @@
 package part9.task39;
 
-
-
 public  class Vehicle {
 
      private String name;

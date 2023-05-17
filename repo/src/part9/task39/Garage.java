@@ -1,17 +1,17 @@
 package part9.task39;
 
-class Garage <T extends Motorcycle,X extends Car> {
+class Garage <T extends Vehicle> {
 
     private T [] motorcycle;
 
-    private X [] car;
+    private T [] car;
 
 
     public void setMotorcycle (T[] motorcycle) {
         this.motorcycle = motorcycle;
     }
 
-    public void setCar (X[] car) {
+    public void setCar (T[] car) {
         this.car = car;
     }
 
@@ -26,7 +26,7 @@ class Garage <T extends Motorcycle,X extends Car> {
 
     public void  printCar() {
 
-        for (X cars : car) {
+        for (T cars : car) {
             System.out.println("Car" + " " + cars.getName());
 
         }

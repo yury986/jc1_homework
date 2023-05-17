@@ -7,13 +7,13 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        Garage <Motorcycle,Car> garageMoto = new Garage<>();
+        Garage <Vehicle> garageMoto = new Garage<>();
         garageMoto.setMotorcycle(new Motorcycle[]{
                 new Motorcycle(sc.nextLine()),
                 new Motorcycle(sc.nextLine())
         });
 
-        Garage <Motorcycle,Car> garageCar = new Garage<>();
+        Garage <Vehicle> garageCar = new Garage<>();
         garageCar.setCar(new Car[]{
                 new Car(sc.nextLine()),
                 new Car(sc.nextLine())
