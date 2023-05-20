@@ -9,7 +9,7 @@ public class PersonWriter {
     public boolean writeToFile(Person person, String fileName) {
         boolean result;
         try{
-             FileOutputStream fos = new FileOutputStream(fileName,true);
+             FileOutputStream fos = new FileOutputStream(fileName);
              ObjectOutputStream oos = new ObjectOutputStream(fos);
              oos.writeObject(person);
              result = true;
