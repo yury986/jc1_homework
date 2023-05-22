@@ -55,15 +55,15 @@ public class Task51 {
                     out.flush();
                 }
                 System.out.println("Array of numbs:" + str + " " + "has written to file:" + numbs.getName());
-                FileWriter fs = new FileWriter(list,true);
-                fs.write(file.getName() + "\n");
-                fs.close();
             }
-
             FileWriter fs = new FileWriter(list,true);
-                fs.write(list.getName()+ "\n");
-                fs.write(numbs.getName()+"\n");
-                fs.close();
+            for (File files : dir.listFiles()) {
+                if (files.isFile()) {
+                    fs.write(files.getName()+ "\n");
+                }
+            }
+            fs.close();
+
 
         } catch (Exception e) {
             e.printStackTrace();
