@@ -1,9 +1,6 @@
 package part12.task52;
 
-import java.awt.*;
 import java.io.Serializable;
-import java.util.Arrays;
-import java.util.Objects;
 import java.util.Random;
 
 public class Person implements Serializable {
@@ -51,4 +48,12 @@ public class Person implements Serializable {
         return surnames;
     }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }

@@ -2,7 +2,7 @@ package part1.task9;
 
 public class Money {
     public static void main(String[] args) {
-        int cash = 120;
+        int cash = 15;
         if (cash % 100 >= 11 && cash % 100 <= 14) {
             System.out.println(cash + " " + "рублей.");
         }else if (cash % 10 == 1) {
