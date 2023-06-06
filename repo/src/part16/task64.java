@@ -14,7 +14,7 @@ public class task64 {
         List<Integer> list = new ArrayList<>();
 
         for (int i = 0; i <= n ; i++) {
-            int num = (int)(Math.random()* (maxValue-minValue)) + minValue;;
+            int num = (int)(Math.random()* (maxValue-minValue)) + minValue;
             list.add(num);
         }
 
