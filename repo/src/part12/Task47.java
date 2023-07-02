@@ -2,7 +2,7 @@ package part12;
 
 import java.io.File;
 
-public class task47 {
+public class Task47 {
     public static void main(String[] args) {
         try {
             File dir = new File("C:/jc1_homework/repo/");
